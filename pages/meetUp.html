@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Me</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Come Let's Play</h1>
+    <nav style="text-align: center">
+      <a href="home.html">Home</a>
+      <a href="home.html">Blog</a>
+      <a href="home.html">About Us</a>
+      <a href="#">Meetup Schedule</a>
+    </nav>
+    <br />
+
+    <div
+      style="
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      "
+    >
+      <form action="home.html" class="meetup-form-group">
+        <p style="font-weight: bold; animation: zoomIn 2s ease-in-out infinite">
+          Setup Play Date
+        </p>
+        <div class="radio-group">
+          <label style="font-weight: bold; margin-right: 130px">Gender</label>
+          <label for="Girl"
+            >Girl<input type="radio" name="radio" id="radio1" value="Boy" />
+          </label>
+          <label for="Boy"
+            >Boy<input type="radio" name="radio" id="radio1" />
+          </label>
+        </div>
+        <br />
+        <div class="radio-group">
+          <label style="font-weight: bold">Select appropriate age</label>
+          <select name="Age">
+            <option value="select">Select from below</option>
+            <option value="Toddlers">1 to 3yrs</option>
+            <option value="Small Kids">5 to 7yrs</option>
+            <option value="Big Kids">8 to 12yrs</option>
+            <option value="Teens">12 &above</option>
+          </select>
+        </div>
+        <br />
+        <fieldset>
+          <legend>Meet me at</legend>
+          <input type="date" name="date" required />
+          <label for="park"
+            >Park
+            <input type="radio" name="radio" id="radio1" />
+          </label>
+          <label for="beach"
+            >Beach <input type="radio" name="radio" id="radio2"
+          /></label>
+        </fieldset>
+        <button type="submit">OK</button>
+      </form>
+    </div>
+  </body>
+</html>
